@@ -1,0 +1,11 @@
+$main-color: #e76e55;
+$topbar-height: 56px;
+$container-width: 600px;
+
+@mixin res($breakpoint) {
+  @if $breakpoint == md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+}

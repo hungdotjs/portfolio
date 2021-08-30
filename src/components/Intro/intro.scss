@@ -1,0 +1,72 @@
+@import '../../global.scss';
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    width: 100%;
+    max-width: $container-width;
+    font-size: 1.2em;
+    padding: 0 32px;
+    padding-bottom: 32px;
+  }
+
+  &__welcome {
+    font-size: 0.833em;
+  }
+
+  &__title {
+    margin-left: 12px;
+    padding: 0 6px;
+    font-size: 2em;
+  }
+
+  &__sns {
+    padding-top: 16px;
+    text-align: right;
+
+    > a {
+      margin-left: 12px;
+    }
+  }
+
+  // &__avatar {
+  //   margin-bottom: 32px;
+  //   text-align: center;
+
+  //   img {
+  //     width: 150px;
+  //     height: 150px;
+  //     border-radius: 50%;
+  //   }
+  // }
+}
+
+.ityped-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}

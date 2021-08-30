@@ -1,0 +1,40 @@
+@import '../../global.scss';
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+
+  &__item {
+    flex: 33.333% 0 1;
+    padding: 8px;
+    padding-bottom: 12px;
+
+    @include res(md) {
+      flex: 20% 0 1;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      margin: 0 auto;
+      padding: 6px;
+      font-size: 14px;
+      overflow: hidden;
+      transition: transform 0.3s;
+
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+
+      img {
+        transition: transform 0.3s;
+      }
+    }
+  }
+}

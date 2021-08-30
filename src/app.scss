@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@import './global.scss';
+
+@font-face {
+  font-family: '04b03';
+  src: local('04b03'), url('./assets/fonts/04b03.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Chubby Choo';
+  src: local('Chubby Choo'),
+    url('./assets/fonts/ChubbyChoo.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.app {
+  font-size: 20px;
+  // line-height: 2;
+  font-family: 'Chubby Choo';
+
+  @include res(md) {
+    font-size: 24px;
+  }
+}
+
+.sections {
+  width: 100%;
+  height: calc(100vh - #{$topbar-height});
+  position: relative;
+  top: $topbar-height;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.section {
+  min-height: calc(100vh - #{$topbar-height});
+}
+
+.container {
+  max-width: $container-width;
+  padding: 0 32px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.title {
+  font-size: 2em !important;
+  margin-bottom: 24px;
+}
+
+.border {
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-repeat: space;
+  border-image-source: url('./assets/images/border.svg');
+  border-image-outset: 2;
+  border-style: solid;
+  border-width: 4px;
+}
+
+button,
+input,
+textarea {
+  padding-top: 0 !important;
+}

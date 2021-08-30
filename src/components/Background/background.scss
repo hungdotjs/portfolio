@@ -1,0 +1,8 @@
+@import '../../global.scss';
+
+#universe {
+  position: fixed;
+  top: $topbar-height;
+  left: 0;
+  z-index: -1;
+}
