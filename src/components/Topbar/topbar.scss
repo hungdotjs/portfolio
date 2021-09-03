@@ -17,11 +17,25 @@
     justify-content: center;
     align-items: center;
     padding: 0 32px;
+    list-style: none;
+    margin: 0;
   }
 
   &__item {
     padding: 0 12px;
-    color: inherit;
-    text-decoration: none !important;
+
+    a {
+      height: $topbar-height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 4px solid transparent;
+      color: inherit;
+      text-decoration: none !important;
+
+      &:hover {
+        border-bottom: 4px solid $main-color;
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@ import './contact.scss';
 
 function Contact() {
   return (
-    <div id="contact" className="section contact">
+    <div id="contact" className="contact">
       <div className="contact__wrapper">
         <h1 className="title text-center">Contact me</h1>
         <div className="nes-field">

@@ -16,6 +16,22 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  outline: none;
+}
+
+a {
+  color: $main-color;
+
+  &:hover {
+    color: $main-color;
+    transition: all 0.3s ease;
+  }
+}
+
+button,
+input,
+textarea {
+  padding-top: 0 !important;
 }
 
 .app {
@@ -51,7 +67,6 @@
   max-width: $container-width;
   padding: 0 32px;
   margin: 0 auto;
-  background-color: white;
 }
 
 .text-center {
@@ -77,8 +92,10 @@
   border-width: 4px;
 }
 
-button,
-input,
-textarea {
-  padding-top: 0 !important;
+.ml-8 {
+  margin-left: 8px;
+}
+
+.ml-16 {
+  margin-left: 16px;
 }

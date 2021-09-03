@@ -1,1 +1,15 @@
+.works {
+  padding: 32px 0;
 
+  &__item {
+    &__title {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}

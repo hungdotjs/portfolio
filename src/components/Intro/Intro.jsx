@@ -4,6 +4,12 @@ import { init } from 'ityped';
 
 import './intro.scss';
 
+const snsData = [
+  { id: 'facebook', link: 'https://www.facebook.com/tranngochung.0510/' },
+  { id: 'linkedin', link: 'https://www.linkedin.com/in/hung-tran-2280b01b8/' },
+  { id: 'github', link: 'https://github.com/hungteddy' },
+];
+
 function Intro() {
   const text = useRef();
 
@@ -27,17 +33,16 @@ function Intro() {
           <span className="nes-text">Hung Tran</span>
         </span>
         , <br />
-        <p className="text-right">a front-end developer.{' />'} </p>
+        <p className="text-right">
+          a <span className="nes-text is-error">front-end</span> developer.
+          {' />'}
+        </p>
         <div className="intro__sns">
-          <a href="#">
-            <i className="nes-icon facebook"></i>
-          </a>
-          <a href="#">
-            <i className="nes-icon linkedin"></i>
-          </a>
-          <a href="#">
-            <i className="nes-icon github"></i>
-          </a>
+          {snsData.map((item) => (
+            <a rel="noreferrer" key={item.id} href={item.link} target="_blank">
+              <i className={`nes-icon ${item.id}`}></i>
+            </a>
+          ))}
         </div>
       </div>
     </div>
