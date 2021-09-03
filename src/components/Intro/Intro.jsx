@@ -33,11 +33,8 @@ function Intro() {
           <span className="nes-text">Hung Tran</span>
         </span>
         , <br />
-        <p className="text-right">
-          a <span className="nes-text is-error">front-end</span> developer.
-          {' />'}
-        </p>
-        <div className="intro__sns">
+        <p className="text-right">a front-end developer.{' />'}</p>
+        <div className="intro__sns text-center">
           {snsData.map((item) => (
             <a rel="noreferrer" key={item.id} href={item.link} target="_blank">
               <i className={`nes-icon ${item.id}`}></i>

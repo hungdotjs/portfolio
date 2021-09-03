@@ -38,7 +38,7 @@ function Contact() {
           ></textarea>
         </div>
         <div className="nes-field text-center">
-          <button className="nes-btn is-error">Send</button>
+          <button className="nes-btn is-primary">Send</button>
         </div>
       </div>
     </div>

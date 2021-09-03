@@ -4,7 +4,8 @@ import Works from './components/Works/Works';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Background from './components/Background/Background';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // import Character from './components/Character/Character';
 
@@ -24,6 +25,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
+      <ScrollToTop />
     </div>
   );
 }

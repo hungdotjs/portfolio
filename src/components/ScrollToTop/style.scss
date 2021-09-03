@@ -1,0 +1,13 @@
+.scroll-to-top {
+  position: fixed !important;
+  bottom: -3em;
+  right: 1em;
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+
+  &.active {
+    bottom: 1em;
+  }
+}

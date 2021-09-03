@@ -21,10 +21,19 @@ function Works() {
                 A web app for language learning.
                 <br />
                 Technologies Used:
-                <span className="nes-text is-error ml-8">
+                <span className="nes-text is-success ml-8">
                   Vue, Firebase, ElementUI
                 </span>
               </p>
+
+              <ul className="nes-list is-circle">
+                <li>
+                  User can post, react, save, share questions or answers (data
+                  stored in Firebase).
+                </li>
+                <li>Users can search for the questions (using Algolia API).</li>
+              </ul>
+
               <a
                 rel="noreferrer"
                 target="_blank"
