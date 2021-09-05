@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import iconUp from '../../assets/images/up.svg';
+import iconUp from '../../assets/svg/up.svg';
 
 import './style.scss';
 

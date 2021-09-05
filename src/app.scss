@@ -55,13 +55,14 @@ textarea {
 
 .sections {
   width: 100%;
-  position: relative;
-  top: $topbar-height;
+  // position: relative;
+  // top: $topbar-height;
   overflow-x: hidden;
 }
 
 .section {
-  min-height: calc(100vh - #{$topbar-height});
+  // min-height: calc(100vh - #{$topbar-height});
+  min-height: 100vh;
 }
 
 .container {

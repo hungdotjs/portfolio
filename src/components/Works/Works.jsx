@@ -5,10 +5,11 @@ import togebetter from '../../assets/images/togebetter.png';
 function Works() {
   return (
     <div id="works" className="works section">
-      <div className="container">
+      <div className="container" data-aos="zoom-in">
         <p className="title">My Works</p>
         <div className="works__item">
           <img
+            data-aos="fade-up"
             src={togebetter}
             className="works__item__image border"
             alt="Togebetter"
@@ -31,7 +32,7 @@ function Works() {
                   User can post, react, save, share questions or answers (data
                   stored in Firebase).
                 </li>
-                <li>Users can search for the questions (using Algolia API).</li>
+                <li>Users can search for the questions (with Algolia API).</li>
               </ul>
 
               <a

@@ -9,7 +9,7 @@ const data = [
 
 function TopBar() {
   return (
-    <div className="topbar">
+    <div className="topbar" data-aos="fade-down">
       <ul className="topbar__wrapper">
         {data.map((item) => (
           <li className="topbar__item" key={item.id}>

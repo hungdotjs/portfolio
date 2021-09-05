@@ -3,7 +3,7 @@ import './contact.scss';
 function Contact() {
   return (
     <div id="contact" className="contact">
-      <div className="contact__wrapper">
+      <div className="contact__wrapper" data-aos="zoom-in">
         <h1 className="title text-center">Contact me</h1>
         <div className="nes-field">
           <input

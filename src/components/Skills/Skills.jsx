@@ -1,13 +1,13 @@
 import './skills.scss';
 
-import htmlImg from '../../assets/images/html.svg';
-import cssImg from '../../assets/images/css.svg';
-import sassImg from '../../assets/images/sass.svg';
-import reactImg from '../../assets/images/react.svg';
-import vueImg from '../../assets/images/vue.svg';
-import javascriptImg from '../../assets/images/javascript.svg';
-import gitImg from '../../assets/images/git.svg';
-import firebaseImg from '../../assets/images/firebase.svg';
+import htmlImg from '../../assets/svg/html.svg';
+import cssImg from '../../assets/svg/css.svg';
+import sassImg from '../../assets/svg/sass.svg';
+import reactImg from '../../assets/svg/react.svg';
+import vueImg from '../../assets/svg/vue.svg';
+import javascriptImg from '../../assets/svg/javascript.svg';
+import gitImg from '../../assets/svg/git.svg';
+import firebaseImg from '../../assets/svg/firebase.svg';
 
 function Skills() {
   const data = [
@@ -24,7 +24,7 @@ function Skills() {
   return (
     <div className="skills">
       {data.map((item) => (
-        <div key={item.name} className="skills__item">
+        <div key={item.name} className="skills__item" data-aos="zoom-in">
           <div className="border nes-pointer">
             <img src={item.src} alt="css" />
             <span>{item.name}</span>

@@ -25,7 +25,7 @@ function Intro() {
 
   return (
     <div id="intro" className="intro section">
-      <div className="intro__wrapper">
+      <div className="intro__wrapper" data-aos="fade-up">
         <span ref={text} className="intro__welcome"></span>
         <br />
         {'<'}I'm
