@@ -5,11 +5,11 @@
   top: 0px;
   width: 100%;
   height: $topbar-height;
-  // background: $light;
-  color: wheat;
+  color: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
   z-index: 2;
 
   &__wrapper {
@@ -39,5 +39,14 @@
         border-bottom: 4px solid $main-color;
       }
     }
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

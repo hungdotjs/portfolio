@@ -1,4 +1,5 @@
 import Curve from '../Curve/Curve';
+import Character from '../Character/Character';
 
 import './works.scss';
 
@@ -8,9 +9,10 @@ function Works() {
   return (
     <div id="works" className="works section">
       <div className="container mb-32" data-aos="fade-left">
-        <p className="title">
-          <i class="nes-squirtle is-small"></i> Works
-        </p>
+        <div className="title">
+          <Character index="0" scale="4" />
+          <span className="mx-32">Works</span>
+        </div>
         <div className="works__item">
           <div className="works__item__body">
             <div className="works__item__title">
@@ -32,7 +34,7 @@ function Works() {
                 </span>
               </p>
 
-              <ul className="nes-list is-circle">
+              <ul className="nes-list is-circle light">
                 <li>
                   User can post, react, save, share questions or answers (data
                   stored in Firebase).
@@ -60,7 +62,7 @@ function Works() {
         </div>
       </div>
 
-      <Curve flip />
+      <Curve color="#092d6d" flip />
     </div>
   );
 }

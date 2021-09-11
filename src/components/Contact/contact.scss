@@ -3,9 +3,10 @@
 .contact {
   padding: 16px 32px;
   // background: #080e18;
-  background: url(../../assets/images/background.jpg);
+  background: url(../../assets/images/footer.jpg);
   background-size: cover;
-  color: wheat;
+  background-position: top;
+  color: #eeeeee;
 
   &__wrapper {
     height: 100%;

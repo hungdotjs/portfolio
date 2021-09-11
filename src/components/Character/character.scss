@@ -1,5 +1,5 @@
 .character {
-  position: absolute;
+  display: inline-block;
   width: 24px;
   height: 24px;
   overflow: hidden;
@@ -9,6 +9,7 @@
   &__spritesheet {
     vertical-align: top;
     animation: moveSpriteSheet 0.5s steps(6) infinite;
+    image-rendering: pixelated;
   }
 }
 

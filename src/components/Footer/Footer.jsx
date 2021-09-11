@@ -3,7 +3,10 @@ import './footer.scss';
 function Footer() {
   return (
     <footer className="footer">
-      Made by Hung with <i className="nes-icon is-small heart"></i>
+      Made with <i className="nes-icon is-small heart"></i> by{' '}
+      <a rel="noreferrer" href="https://github.com/hungteddy" target="_blank">
+        Hung
+      </a>
     </footer>
   );
 }
