@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import iconUp from '../../assets/svg/up.svg';
 
-import './style.scss';
+import './scroll-to-top.scss';
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
