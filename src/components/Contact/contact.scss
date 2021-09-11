@@ -1,12 +1,18 @@
 @import '../../global.scss';
 
 .contact {
-  padding: 16px 32px;
-  // background: #080e18;
-  background: url(../../assets/images/footer.jpg);
+  position: relative;
+  color: #eeeeee;
+  // background: #261e2b;
+  background: url(../../assets/images/bg.jpg);
   background-size: cover;
   background-position: top;
-  color: #eeeeee;
+
+  &__mask {
+    padding: 32px;
+    padding-bottom: 52px;
+    background: rgba(0, 0, 0, 0.5);
+  }
 
   &__wrapper {
     height: 100%;
@@ -23,4 +29,14 @@
     width: 100%;
     margin-bottom: 24px;
   }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 0;
+  text-align: center;
+  color: #eeeeee;
 }

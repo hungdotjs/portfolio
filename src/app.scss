@@ -48,12 +48,8 @@ textarea {
   // line-height: 2;
   font-family: 'Chubby Choo';
   color: #eeeeee;
-  background: rgba(8, 14, 24, 0.8);
-  background: linear-gradient(
-    180deg,
-    rgba(8, 14, 24, 0.9) 0%,
-    rgb(39, 27, 41) 100%
-  );
+  background: #16121d;
+  // background: linear-gradient(180deg, #16121d 0%, #16121d 100%);
 
   @include res(md) {
     font-size: 24px;
@@ -103,6 +99,10 @@ textarea {
   border-width: 4px;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .ml-8 {
   margin-left: 8px;
 }
@@ -123,6 +123,19 @@ textarea {
 
 .mb-32 {
   margin-bottom: 32px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .is-small {

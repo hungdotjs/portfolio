@@ -5,6 +5,7 @@ import Background from '../Background/Background';
 import fbIcon from '../../assets/svg/facebook.svg';
 import inIcon from '../../assets/svg/linkedin.svg';
 import githubIcon from '../../assets/svg/github.svg';
+import arrowDown from '../../assets/svg/down.svg';
 
 import './intro.scss';
 
@@ -55,11 +56,18 @@ function Intro() {
                 src={item.src}
                 alt={item.id}
                 data-aos="fade-right"
+                data-aos-offset="0"
                 data-aos-delay={800 + index * 300}
               />
             </a>
           ))}
         </div>
+      </div>
+
+      <div className="intro__down">
+        <a href="#about">
+          <img src={arrowDown} alt="down" />
+        </a>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 
 import './topbar.scss';
 
@@ -10,31 +10,8 @@ const data = [
 ];
 
 function TopBar() {
-  const [isFixed, setIsFixed] = useState(false);
-  const [isHide, setIsHide] = useState(false);
-  const topbar = useRef();
-
-  const toggleTopbar = () => {
-    const h = window.innerHeight;
-
-    if (window.pageYOffset > h) {
-      setIsFixed(true);
-      return;
-    }
-
-    setIsFixed(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', toggleTopbar);
-
-    return () => {
-      window.removeEventListener('scroll', toggleTopbar);
-    };
-  });
-
   return (
-    <div ref={topbar} className={`topbar`}>
+    <div className={`topbar`}>
       <ul className="topbar__wrapper">
         {data.map((item, index) => (
           <li

@@ -10,8 +10,8 @@ function About() {
       <Curve />
 
       <div className="container">
-        <div data-aos="fade-left" className="mb-32">
-          <div className="title about__title">
+        <div data-aos="fade-left" className="py-32">
+          <div className="title mx-16">
             <Character index="3" scale="4" />
             <span className="mx-32">About me</span>
           </div>
@@ -26,7 +26,7 @@ function About() {
           </p>
         </div>
 
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" className="pt-32">
           <div className="title text-right">
             <Character index="2" scale="4" />
             <span className="mx-32">Skills</span>

@@ -8,8 +8,8 @@ import togebetter from '../../assets/images/togebetter.png';
 function Works() {
   return (
     <div id="works" className="works section">
-      <div className="container mb-32" data-aos="fade-left">
-        <div className="title">
+      <div className="container pb-32" data-aos="fade-left">
+        <div className="title mx-16">
           <Character index="0" scale="4" />
           <span className="mx-32">Works</span>
         </div>
@@ -29,7 +29,7 @@ function Works() {
                 A web app for language learning.
                 <br />
                 Technologies Used:
-                <span className="nes-text is-success ml-8">
+                <span className="nes-text is-warning ml-8">
                   Vue, Firebase, ElementUI
                 </span>
               </p>
@@ -62,7 +62,7 @@ function Works() {
         </div>
       </div>
 
-      <Curve color="#092d6d" flip />
+      <Curve color="#041737" flip />
     </div>
   );
 }

@@ -6,8 +6,9 @@
   justify-content: center;
   align-items: center;
   color: #eeeeee;
-  background: url(../../assets/images/background.jpg);
+  background: url(../../assets/images/bg-2.jpg);
   background-size: cover;
+  background-position: bottom center;
 
   &__wrapper {
     position: relative;
@@ -39,6 +40,17 @@
       padding: 0 12px;
     }
   }
+
+  &__down {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: bounce 1s alternate infinite;
+    z-index: 2;
+  }
 }
 
 .ityped-cursor {
@@ -51,14 +63,14 @@
 
 @keyframes shine {
   0% {
-    color: #6b1839;
+    color: #183c6b;
     text-shadow: none;
   }
   100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #d8406f,
-      -0.2rem 0.1rem 1rem #d8406f, 0.2rem 0.1rem 1rem #d8406f,
-      0 -0.5rem 2rem #ff2483, 0.14rem 0.35rem 0 #ff2483;
+    color: #e6efff;
+    text-shadow: 0 0 0.6rem #e6f0ff, 0 0 1.5rem #4075d8,
+      -0.2rem 0.1rem 1rem #4070d8, 0.2rem 0.1rem 1rem #4068d8,
+      0 -0.5rem 2rem #247cff, 0.14rem 0.35rem 0 #2469ff;
   }
 }
 
@@ -185,5 +197,14 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(16px);
   }
 }
