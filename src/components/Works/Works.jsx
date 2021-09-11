@@ -1,3 +1,5 @@
+import Curve from '../Curve/Curve';
+
 import './works.scss';
 
 import togebetter from '../../assets/images/togebetter.png';
@@ -5,19 +7,22 @@ import togebetter from '../../assets/images/togebetter.png';
 function Works() {
   return (
     <div id="works" className="works section">
-      <div className="container" data-aos="zoom-in">
-        <p className="title">My Works</p>
+      <div className="container mb-32" data-aos="fade-left">
+        <p className="title">
+          <i class="nes-squirtle is-small"></i> Works
+        </p>
         <div className="works__item">
-          <img
-            data-aos="fade-up"
-            src={togebetter}
-            className="works__item__image border"
-            alt="Togebetter"
-          />
           <div className="works__item__body">
-            <div className="works__item__title">1. Togebetter</div>
+            <div className="works__item__title">
+              1. Togebetter{' '}
+              <span className="nes-text is-small">- Personal project</span>
+            </div>
+            <img
+              src={togebetter}
+              className="works__item__image border"
+              alt="Togebetter"
+            />
             <div>
-              <span className="nes-text is-disabled">Personal Project</span>
               <p>
                 A web app for language learning.
                 <br />
@@ -54,6 +59,8 @@ function Works() {
           </div>
         </div>
       </div>
+
+      <Curve flip />
     </div>
   );
 }

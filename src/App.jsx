@@ -6,7 +6,6 @@ import Intro from './components/Intro/Intro';
 import Works from './components/Works/Works';
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
-// import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -20,7 +19,8 @@ function App() {
   useEffect(() => {
     aos.init({
       duration: 1000,
-      once: true,
+      // once: true,
+      offset: 300,
     });
   }, []);
 
@@ -28,7 +28,6 @@ function App() {
     <div className="app">
       <Topbar />
       <div className="sections">
-        {/* <Background /> */}
         <Intro />
         <About />
         <Works />

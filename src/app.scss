@@ -28,6 +28,12 @@ html {
   outline: none;
 }
 
+body {
+  background-image: url(./assets/images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 a {
   color: $main-color;
 
@@ -69,7 +75,7 @@ textarea {
   max-width: $container-width;
   padding: 0 32px;
   margin: 0 auto;
-  background: rgba($color: $light, $alpha: 0.9);
+  // background: rgba($color: $light, $alpha: 0.9);
 }
 
 .text-center {
@@ -103,8 +109,27 @@ textarea {
   margin-left: 16px;
 }
 
+.is-small {
+  font-size: 0.6em;
+}
+
 .nes-list.is-circle li::before {
   top: 0.5em;
+}
+
+.nes-input,
+.nes-textarea {
+  &.light {
+    background: #262d38;
+    color: #ffffff;
+    border-image-source: url('./assets/images/border-white.svg');
+  }
+}
+
+.nes-btn {
+  &.light {
+    border-image-source: url('./assets/images/border-white.svg');
+  }
 }
 
 .color-green {

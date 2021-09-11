@@ -1,7 +1,7 @@
 @import '../../global.scss';
 
 .topbar {
-  position: fixed;
+  position: absolute;
   top: 0px;
   width: 100%;
   height: $topbar-height;

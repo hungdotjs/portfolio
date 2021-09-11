@@ -3,13 +3,13 @@ import './contact.scss';
 function Contact() {
   return (
     <div id="contact" className="contact">
-      <div className="contact__wrapper" data-aos="zoom-in">
+      <div className="contact__wrapper" data-aos="fade-up">
         <h1 className="title text-center">Contact me</h1>
         <div className="nes-field">
           <input
             type="text"
             id="name"
-            className="nes-input"
+            className="nes-input light"
             placeholder="Name"
           />
         </div>
@@ -17,7 +17,7 @@ function Contact() {
           <input
             type="email"
             id="email"
-            className="nes-input"
+            className="nes-input light"
             placeholder="Email"
           />
         </div>
@@ -25,14 +25,14 @@ function Contact() {
           <input
             type="text"
             id="subject"
-            className="nes-input"
+            className="nes-input light"
             placeholder="Subject"
           />
         </div>
         <div className="nes-field">
           <textarea
             id="message"
-            className="nes-textarea"
+            className="nes-textarea light"
             rows="5"
             placeholder="Message"
           ></textarea>

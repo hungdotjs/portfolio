@@ -1,17 +1,21 @@
 @import '../../global.scss';
 
 .contact {
-  padding: 32px;
+  padding: 16px 32px;
+  // background: #080e18;
+  background: url(../../assets/images/background.jpg);
+  background-size: cover;
+  color: wheat;
 
   &__wrapper {
     height: 100%;
-    max-width: 450px;
+    max-width: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba($color: $light, $alpha: 0.9);
+    // background: rgba($color: $light, $alpha: 0.9);
   }
 
   .nes-field {

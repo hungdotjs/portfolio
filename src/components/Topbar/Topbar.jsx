@@ -9,10 +9,15 @@ const data = [
 
 function TopBar() {
   return (
-    <div className="topbar" data-aos="fade-down">
+    <div className="topbar">
       <ul className="topbar__wrapper">
-        {data.map((item) => (
-          <li className="topbar__item" key={item.id}>
+        {data.map((item, index) => (
+          <li
+            className="topbar__item"
+            key={item.id}
+            data-aos="fade-down"
+            data-aos-delay={index * 300}
+          >
             <a href={`#${item.id}`}>{item.name}</a>
           </li>
         ))}

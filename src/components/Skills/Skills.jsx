@@ -23,8 +23,14 @@ function Skills() {
 
   return (
     <div className="skills">
-      {data.map((item) => (
-        <div key={item.name} className="skills__item" data-aos="zoom-in">
+      {data.map((item, index) => (
+        <div
+          key={item.name}
+          className="skills__item"
+          data-aos="fade-right"
+          data-aos-offset="0"
+          data-aos-delay={index * 100}
+        >
           <div className="border nes-pointer">
             <img src={item.src} alt="css" />
             <span>{item.name}</span>
