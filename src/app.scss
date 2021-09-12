@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 @import './global.scss';
-
-@font-face {
-  font-family: '04b03';
-  src: local('04b03'), url('./assets/fonts/04b03.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'Chubby Choo';
   src: local('Chubby Choo'),
     url('./assets/fonts/ChubbyChoo.ttf') format('truetype');
+  font-display: swap;
 }
 
 html {
@@ -45,11 +39,16 @@ textarea {
 
 .app {
   font-size: 20px;
-  // line-height: 2;
-  font-family: 'Chubby Choo';
+  font-family: 'Chubby Choo', sans-serif;
   color: #eeeeee;
   background: #16121d;
-  // background: linear-gradient(180deg, #16121d 0%, #16121d 100%);
+  // background: linear-gradient(180deg, #16121d 0%, #041737 100%);
+  transition: all 0.5s ease;
+
+  &.light {
+    color: #16121d;
+    background: #ffffff;
+  }
 
   @include res(md) {
     font-size: 24px;
@@ -121,6 +120,10 @@ textarea {
   margin-right: 32px;
 }
 
+.mb-8 {
+  margin-bottom: 8px;
+}
+
 .mb-32 {
   margin-bottom: 32px;
 }
@@ -142,9 +145,16 @@ textarea {
   font-size: 0.6em;
 }
 
-.nes-list.is-circle li::before {
-  top: 0.5em;
-  color: #eee;
+.nes-list.is-circle {
+  & li::before {
+    top: 0.5em;
+  }
+
+  &.dark {
+    & li::before {
+      color: #eee;
+    }
+  }
 }
 
 .nes-input,

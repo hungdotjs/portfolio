@@ -1,11 +1,15 @@
 import Curve from '../Curve/Curve';
 import Character from '../Character/Character';
+import { useContext } from 'react';
+import { ThemeContext } from '../../App';
 
 import './works.scss';
 
 import togebetter from '../../assets/images/togebetter.png';
 
 function Works() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div id="works" className="works section">
       <div className="container pb-32" data-aos="fade-left">
@@ -34,7 +38,7 @@ function Works() {
                 </span>
               </p>
 
-              <ul className="nes-list is-circle light">
+              <ul className={`nes-list is-circle ${theme}`}>
                 <li>
                   User can post, react, save, share questions or answers (data
                   stored in Firebase).

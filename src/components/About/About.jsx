@@ -1,6 +1,7 @@
 import Skills from '../Skills/Skills';
 import Curve from '../Curve/Curve';
 import Character from '../Character/Character';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 
 import './about.scss';
 
@@ -11,6 +12,10 @@ function About() {
 
       <div className="container">
         <div data-aos="fade-left" className="py-32">
+          <div className="text-right">
+            <ThemeToggle />
+          </div>
+
           <div className="title mx-16">
             <Character index="3" scale="4" />
             <span className="mx-32">About me</span>
