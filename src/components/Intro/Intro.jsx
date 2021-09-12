@@ -37,16 +37,21 @@ function Intro() {
   }, []);
 
   return (
-    <div id="intro" className="intro section">
+    <div
+      id="intro"
+      className="intro section"
+      data-aos="zoom-out"
+      data-aos-delay="800"
+    >
       <Background />
 
-      <div className="intro__wrapper" data-aos="fade-up">
+      <div className="intro__wrapper" data-aos="fade-up" data-aos-delay="1000">
         <span ref={text} className="intro__welcome"></span>
         <br />
         {'<'}I'm
         <span className="intro__title nes-text">HungTran</span>
         , <br />
-        <p className="text-right" data-aos="fade-up" data-aos-delay="500">
+        <p className="text-right" data-aos="fade-up" data-aos-delay="1500">
           a front-end developer.{' />'}
         </p>
         <div className="intro__sns text-center">
@@ -57,7 +62,7 @@ function Intro() {
                 alt={item.id}
                 data-aos="fade-right"
                 data-aos-offset="0"
-                data-aos-delay={800 + index * 300}
+                data-aos-delay={1800 + index * 300}
               />
             </a>
           ))}

@@ -18,7 +18,7 @@ function TopBar() {
             className="topbar__item"
             key={item.id}
             data-aos="fade-down"
-            data-aos-delay={index * 300}
+            data-aos-delay={1200 + index * 300}
           >
             <a href={`#${item.id}`}>{item.name}</a>
           </li>
