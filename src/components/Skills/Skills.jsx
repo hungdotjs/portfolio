@@ -1,3 +1,5 @@
+import LazyLoad from 'react-lazyload';
+
 import './skills.scss';
 
 import htmlImg from '../../assets/svg/html.svg';
@@ -32,7 +34,9 @@ function Skills() {
           data-aos-delay={index * 100}
         >
           <div className="border nes-pointer">
-            <img src={item.src} alt="css" />
+            <LazyLoad height="48">
+              <img src={item.src} alt="css" />
+            </LazyLoad>
             <span>{item.name}</span>
           </div>
         </div>

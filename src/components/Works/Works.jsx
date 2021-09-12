@@ -1,11 +1,14 @@
-import Curve from '../Curve/Curve';
-import Character from '../Character/Character';
 import { useContext } from 'react';
 import { ThemeContext } from '../../App';
 
+import Curve from '../Curve/Curve';
+import Character from '../Character/Character';
+import LazyLoad from 'react-lazyload';
+
 import './works.scss';
 
-import togebetter from '../../assets/images/togebetter.png';
+const togeImg =
+  'https://firebasestorage.googleapis.com/v0/b/togebetter.appspot.com/o/portfolio%2Ftogebetter.png?alt=media&token=afc2011e-87de-4d07-8840-18829016e8e1';
 
 function Works() {
   const { theme } = useContext(ThemeContext);
@@ -23,11 +26,13 @@ function Works() {
               1. Togebetter{' '}
               <span className="nes-text is-small">- Personal project</span>
             </div>
-            <img
-              src={togebetter}
-              className="works__item__image border"
-              alt="Togebetter"
-            />
+            <LazyLoad>
+              <img
+                src={togeImg}
+                className="works__item__image border"
+                alt="Togebetter"
+              />
+            </LazyLoad>
             <div>
               <p>
                 A web app for language learning.
@@ -40,7 +45,7 @@ function Works() {
 
               <ul className={`nes-list is-circle ${theme}`}>
                 <li>
-                  User can post, react, save, share questions or answers (data
+                  Users can post, react, save, share questions or answers (data
                   stored in Firebase).
                 </li>
                 <li>Users can search for the questions (with Algolia API).</li>
