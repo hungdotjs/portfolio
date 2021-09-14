@@ -1,8 +1,13 @@
-import axios from 'axios';
 import { useState } from 'react';
+import { useContext } from 'react';
+import { ThemeContext } from '../../App';
+import axios from 'axios';
+
 import './contact-form.scss';
 
 export default function ContactForm() {
+  const { theme } = useContext(ThemeContext);
+
   const [alert, setAlert] = useState('');
   const [status, setStatus] = useState('');
   const [name, setName] = useState('');
@@ -38,7 +43,7 @@ export default function ContactForm() {
           type="text"
           id="name"
           name="name"
-          className="nes-input light"
+          className={`nes-input  ${theme === 'light' ? 'dark' : 'light'}`}
           placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -50,7 +55,7 @@ export default function ContactForm() {
           type="email"
           id="email"
           name="email"
-          className="nes-input light"
+          className={`nes-input ${theme === 'light' ? 'dark' : 'light'}`}
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -62,7 +67,7 @@ export default function ContactForm() {
           type="text"
           id="subject"
           name="subject"
-          className="nes-input light"
+          className={`nes-input ${theme === 'light' ? 'dark' : 'light'}`}
           placeholder="Subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
@@ -72,7 +77,7 @@ export default function ContactForm() {
       <div className="nes-field">
         <textarea
           id="message"
-          className="nes-textarea light"
+          className={`nes-textarea ${theme === 'light' ? 'dark' : 'light'}`}
           name="message"
           rows="4"
           placeholder="Message"

@@ -2,16 +2,12 @@
 
 .contact {
   position: relative;
-  color: #eeeeee;
   // background: #261e2b;
-  background: url('https://firebasestorage.googleapis.com/v0/b/togebetter.appspot.com/o/portfolio%2Fbg.jpg?alt=media&token=440a6640-2efd-4ccf-80dd-3b76bc70f84f');
-  background-size: cover;
-  background-position: top;
 
   &__mask {
     padding: 32px;
     padding-bottom: 52px;
-    background: rgba(0, 0, 0, 0.5);
+    // background: rgba(0, 0, 0, 0.5);
   }
 
   &__wrapper {

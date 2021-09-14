@@ -23,7 +23,7 @@ function About() {
           <p>
             I'm a front-end developer with passionate about coding and solving
             problems through code. I'm currently expanding my skills in
-            JavaScript, and dabbling in back-end (NodeJS, Express, Mongo).
+            JavaScript, and diving in back-end to become a fullstack developer.
           </p>
           <p>
             I am excited to work alongside other amazing programmers and learn

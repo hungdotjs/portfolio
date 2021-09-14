@@ -4,7 +4,7 @@ import './background.scss';
 
 function Background() {
   const [speedCoeff] = useState(0.05);
-  const [starDensity] = useState(0.116);
+  const [starDensity] = useState(0.08);
   const [giantColor] = useState('255,255,255');
   const [cometColor] = useState('255,255,255');
   const [starColor] = useState('255,255,255');

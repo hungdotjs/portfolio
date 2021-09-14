@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #eeeeee;
+  color: #ffffff;
   background: url('https://firebasestorage.googleapis.com/v0/b/togebetter.appspot.com/o/portfolio%2Fbg-2.jpeg?alt=media&token=b2a2fd74-74ce-48c9-8f22-67aa1bb7432f');
   background-size: cover;
   background-position: bottom center;
@@ -14,10 +14,14 @@
     position: relative;
     width: 100%;
     max-width: 600px;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 0 32px;
     padding-bottom: 32px;
     z-index: 2;
+
+    @include res(md) {
+      font-size: 1.1em;
+    }
   }
 
   &__welcome {
@@ -67,7 +71,7 @@
     text-shadow: none;
   }
   100% {
-    color: #e6efff;
+    color: #ffffff;
     text-shadow: 0 0 0.6rem #e6f0ff, 0 0 1.5rem #4075d8,
       -0.2rem 0.1rem 1rem #4070d8, 0.2rem 0.1rem 1rem #4068d8,
       0 -0.5rem 2rem #247cff, 0.14rem 0.35rem 0 #2469ff;

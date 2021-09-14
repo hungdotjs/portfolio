@@ -51,7 +51,7 @@ function Intro() {
         {'<'}I'm
         <span className="intro__title nes-text">HungTran</span>
         , <br />
-        <p className="text-right" data-aos="fade-up" data-aos-delay="1500">
+        <p className="text-center" data-aos="fade-up" data-aos-delay="1500">
           a front-end developer.{' />'}
         </p>
         <div className="intro__sns text-center">

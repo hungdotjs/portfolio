@@ -1,77 +1,53 @@
-import { useContext } from 'react';
-import { ThemeContext } from '../../App';
-
-import Curve from '../Curve/Curve';
+import ProjectDetail from '../ProjectDetail/ProjectDetail';
 import Character from '../Character/Character';
-import LazyLoad from 'react-lazyload';
+import img1 from '../../assets/images/togebetter.jpeg';
+import img2 from '../../assets/images/shibaurl.jpeg';
 
 import './works.scss';
 
-const togeImg =
-  'https://firebasestorage.googleapis.com/v0/b/togebetter.appspot.com/o/portfolio%2Ftogebetter.png?alt=media&token=afc2011e-87de-4d07-8840-18829016e8e1';
+const data = [
+  {
+    title: 'Togebetter',
+    image: img1,
+    description: 'A web app for language learning.',
+    technologies: 'Vue, Firebase, ElementUI',
+    live: 'https://togebetter.netlify.app',
+    repo: 'https://github.com/hungteddy/togebetter',
+  },
+  {
+    title: 'ShibaURL',
+    image: img2,
+    description: 'A minimal URL shortener.',
+    technologies: 'React, NodeJS, MongoDB',
+    live: 'https://shibaurl.netlify.app',
+    repo: 'https://github.com/hungteddy/shiba-url',
+  },
+];
 
 function Works() {
-  const { theme } = useContext(ThemeContext);
-
   return (
-    <div id="works" className="works section">
-      <div className="container pb-32" data-aos="fade-left">
-        <div className="title mx-16">
+    <div id="projects" className="works section">
+      <div className="container pb-32">
+        <div className="title mx-16" data-aos="fade-left">
           <Character index="0" scale="4" />
-          <span className="mx-32">Works</span>
+          <span className="mx-32">Projects</span>
         </div>
-        <div className="works__item">
-          <div className="works__item__body">
-            <div className="works__item__title">
-              1. Togebetter{' '}
-              <span className="nes-text is-small">- Personal project</span>
-            </div>
-            <LazyLoad>
-              <img
-                src={togeImg}
-                className="works__item__image border"
-                alt="Togebetter"
+        <div className="works__wrapper">
+          {data.map((item) => {
+            return (
+              <ProjectDetail
+                key={item.title}
+                title={item.title}
+                image={item.image}
+                live={item.live}
+                repo={item.repo}
+                technologies={item.technologies}
+                description={item.description}
               />
-            </LazyLoad>
-            <div>
-              <p>
-                A web app for language learning.
-                <br />
-                Technologies Used:
-                <span className="nes-text is-warning ml-8">
-                  Vue, Firebase, ElementUI
-                </span>
-              </p>
-
-              <ul className={`nes-list is-circle ${theme}`}>
-                <li>
-                  Users can post, react, save, share questions or answers (data
-                  stored in Firebase).
-                </li>
-                <li>Users can search for the questions (with Algolia API).</li>
-              </ul>
-
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://togebetter.netlify.app/"
-              >
-                Live
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/hungteddy/togebetter"
-                className="ml-16"
-              >
-                Github
-              </a>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
-
-      <Curve color="#041737" flip />
     </div>
   );
 }

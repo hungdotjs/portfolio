@@ -5,7 +5,7 @@ import './topbar.scss';
 const data = [
   { id: 'intro', name: 'Intro' },
   { id: 'about', name: 'About' },
-  { id: 'works', name: 'Works' },
+  { id: 'projects', name: 'Projects' },
   { id: 'contact', name: 'Contact' },
 ];
 

@@ -1,4 +1,6 @@
 import LazyLoad from 'react-lazyload';
+import { useContext } from 'react';
+import { ThemeContext } from '../../App';
 
 import './skills.scss';
 
@@ -11,17 +13,19 @@ import javascriptImg from '../../assets/svg/javascript.svg';
 import gitImg from '../../assets/svg/git.svg';
 import firebaseImg from '../../assets/svg/firebase.svg';
 
+const data = [
+  { name: 'CSS', src: cssImg },
+  { name: 'HTML', src: htmlImg },
+  { name: 'SASS', src: sassImg },
+  { name: 'Javascript', src: javascriptImg },
+  { name: 'Vue', src: vueImg },
+  { name: 'React', src: reactImg },
+  { name: 'Git', src: gitImg },
+  { name: 'Firebase', src: firebaseImg },
+];
+
 function Skills() {
-  const data = [
-    { name: 'CSS', src: cssImg },
-    { name: 'HTML', src: htmlImg },
-    { name: 'SASS', src: sassImg },
-    { name: 'Javascript', src: javascriptImg },
-    { name: 'Vue', src: vueImg },
-    { name: 'React', src: reactImg },
-    { name: 'Git', src: gitImg },
-    { name: 'Firebase', src: firebaseImg },
-  ];
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className="skills">
@@ -33,7 +37,7 @@ function Skills() {
           data-aos-offset="0"
           data-aos-delay={index * 100}
         >
-          <div className="border nes-pointer">
+          <div className={`border nes-pointer ${theme}`}>
             <LazyLoad height="48">
               <img src={item.src} alt="css" />
             </LazyLoad>
