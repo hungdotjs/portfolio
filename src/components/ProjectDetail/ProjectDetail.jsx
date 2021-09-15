@@ -5,12 +5,13 @@ export default function ProjectDetail(props) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`works__item border ${theme}`} data-aos="fade-up">
+    <div className={`works__item border ${theme}`} data-aos="fade-right">
       <div className="works__item__body">
-        <div className="works__item__title">{props.title}</div>
-        <div className="works__item__image">
-          <div className="works__item__mask"></div>
-          <img src={props.image} alt="Togebetter" />
+        <div className="works__item__header">
+          <div className="works__item__image">
+            <img src={props.image} alt="Togebetter" width="100" height="100" />
+          </div>
+          <div className="works__item__title">{props.title}</div>
         </div>
         <div>
           <p>{props.description}</p>

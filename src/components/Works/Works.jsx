@@ -1,7 +1,7 @@
 import ProjectDetail from '../ProjectDetail/ProjectDetail';
 import Character from '../Character/Character';
-import img1 from '../../assets/images/togebetter.jpeg';
-import img2 from '../../assets/images/shibaurl.jpeg';
+import img1 from '../../assets/images/project-1.webp';
+import img2 from '../../assets/images/project-2.webp';
 
 import './works.scss';
 
