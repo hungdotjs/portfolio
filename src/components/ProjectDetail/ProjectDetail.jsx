@@ -1,15 +1,23 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../App';
+import LazyLoad from 'react-lazyload';
 
 export default function ProjectDetail(props) {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`works__item border ${theme}`} data-aos="fade-right">
+    <div className="works__item" data-aos="fade-right">
       <div className="works__item__body">
         <div className="works__item__header">
-          <div className="works__item__image">
-            <img src={props.image} alt="Togebetter" width="100" height="100" />
+          <div className={`works__item__image border ${theme}`}>
+            <LazyLoad>
+              <img
+                src={props.image}
+                alt="Togebetter"
+                width="100"
+                height="100"
+              />
+            </LazyLoad>
           </div>
           <div className="works__item__title">{props.title}</div>
         </div>
@@ -22,7 +30,7 @@ export default function ProjectDetail(props) {
             </span>
           </p>
 
-          <div className="text-right">
+          <div>
             <a rel="noreferrer" target="_blank" href={props.repo}>
               <button className="nes-btn mx-8">Source</button>
             </a>

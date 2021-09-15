@@ -41,7 +41,7 @@ function Intro() {
       id="intro"
       className="intro section"
       data-aos="zoom-out"
-      data-aos-delay="400"
+      data-aos-delay="800"
     >
       <Background />
 

@@ -3,7 +3,8 @@
 @font-face {
   font-family: 'Chubby Choo';
   src: local('Chubby Choo'),
-    url('./assets/fonts/ChubbyChoo.ttf') format('truetype');
+    url('https://res.cloudinary.com/hungtn/raw/upload/v1631730753/portfolio/ChubbyChoo_ql37i9.ttf')
+      format('truetype');
   font-display: swap;
 }
 
@@ -92,14 +93,17 @@ textarea {
   border-image-slice: 2;
   border-image-width: 2;
   border-image-repeat: space;
-  border-image-source: url('./assets/images/border.svg');
+  border-image-source: url('./assets/images/border-white.svg');
   border-image-outset: 2;
   border-style: solid;
   border-width: 4px;
-  box-shadow: 4px 4px 8px 1px #0e4a89;
+  background: #fefefe;
+  box-shadow: 4px 4px 8px 1px #000000;
 
   &.dark {
-    background: #262d38;
+    border-image-source: url('./assets/images/border.svg');
+    background: #27222f;
+    box-shadow: 4px 4px 8px 1px #ffffff;
   }
 }
 

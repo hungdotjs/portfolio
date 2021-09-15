@@ -1,14 +1,13 @@
 import ProjectDetail from '../ProjectDetail/ProjectDetail';
 import Character from '../Character/Character';
-import img1 from '../../assets/images/project-1.webp';
-import img2 from '../../assets/images/project-2.webp';
 
 import './works.scss';
 
 const data = [
   {
     title: 'Togebetter',
-    image: img1,
+    image:
+      'https://res.cloudinary.com/hungtn/image/upload/v1631730031/portfolio/app_togebetter_mvf3bk.webp',
     description: 'A web app for language learning.',
     technologies: 'Vue, Firebase, ElementUI',
     live: 'https://togebetter.netlify.app',
@@ -16,7 +15,8 @@ const data = [
   },
   {
     title: 'ShibaURL',
-    image: img2,
+    image:
+      'https://res.cloudinary.com/hungtn/image/upload/v1631730052/portfolio/app_shibaurl_ao485n.webp',
     description: 'A minimal URL shortener.',
     technologies: 'React, NodeJS, MongoDB',
     live: 'https://shibaurl.netlify.app',

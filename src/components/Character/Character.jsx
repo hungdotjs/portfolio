@@ -1,9 +1,13 @@
-import blue from '../../assets/images/blue.png';
-import red from '../../assets/images/red.png';
-import yellow from '../../assets/images/yellow.png';
-import green from '../../assets/images/green.png';
-
 import './character.scss';
+
+const red =
+  'https://res.cloudinary.com/hungtn/image/upload/v1631730379/portfolio/red_stkrsk.png';
+const blue =
+  'https://res.cloudinary.com/hungtn/image/upload/v1631730378/portfolio/blue_dpmuzx.png';
+const yellow =
+  'https://res.cloudinary.com/hungtn/image/upload/v1631730378/portfolio/yellow_kvsjxt.png';
+const green =
+  'https://res.cloudinary.com/hungtn/image/upload/v1631730378/portfolio/green_yrctuz.png';
 
 const colors = [blue, red, yellow, green];
 
