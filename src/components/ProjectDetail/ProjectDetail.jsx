@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../App';
-import LazyLoad from 'react-lazyload';
 
 export default function ProjectDetail(props) {
   const { theme } = useContext(ThemeContext);
@@ -11,9 +10,7 @@ export default function ProjectDetail(props) {
         <div className="works__item__title">{props.title}</div>
         <div className="works__item__image">
           <div className="works__item__mask"></div>
-          <LazyLoad height={300}>
-            <img src={props.image} alt="Togebetter" />
-          </LazyLoad>
+          <img src={props.image} alt="Togebetter" />
         </div>
         <div>
           <p>{props.description}</p>
