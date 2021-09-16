@@ -26,7 +26,7 @@ const data = [
 
 function Works() {
   return (
-    <div id="projects" className="works section">
+    <div id="projects" className="works">
       <div className="container pb-32">
         <div className="title mx-16" data-aos="fade-left">
           <Character index="0" scale="4" />

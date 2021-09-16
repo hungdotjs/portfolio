@@ -5,23 +5,35 @@
   padding-bottom: 0;
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 16px;
     margin-top: 48px;
 
     @include res(md) {
-      padding: 32px;
+      flex-direction: row;
+      align-items: flex-start;
     }
 
-    &__header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
+    &__body {
+      flex: 1 1 auto;
+
+      @include res(md) {
+        padding-left: 48px;
+      }
+    }
+
+    &__image {
+      margin-bottom: 32px;
+      border-radius: 8px;
+      overflow: hidden;
     }
 
     &__title {
       font-size: 1.5em;
-      margin-bottom: 24px;
-      margin-left: 32px;
+      margin-bottom: 16px;
+      line-height: 1;
     }
   }
 }

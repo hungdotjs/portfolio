@@ -5,7 +5,7 @@ $blue: #2aa7ff;
 $yellow: #fcbc0f;
 $red: #f85f36;
 $topbar-height: 56px;
-$container-width: 800px;
+$container-width: 650px;
 
 @mixin res($breakpoint) {
   @if $breakpoint == md {
