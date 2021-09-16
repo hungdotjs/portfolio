@@ -49,7 +49,10 @@ function Intro() {
         <span ref={text} className="intro__welcome"></span>
         <br />
         {'<'}I'm
-        <span className="intro__title nes-text">HungTran</span>
+        <span className="intro__title nes-text">
+          <span>Hung</span>
+          <span>Tran</span>
+        </span>
         , <br />
         <p className="text-center" data-aos="fade-up" data-aos-delay="1500">
           a front-end developer.{' />'}

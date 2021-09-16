@@ -5,7 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: white;
+  text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+    0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+    0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+    -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1),
+    -0.03em 0 0 rgba(0, 0, 0, 1);
+
   background: url('https://res.cloudinary.com/hungtn/image/upload/v1631729593/portfolio/bg_nwb5vd.webp');
   background-size: cover;
   background-position: bottom center;
@@ -29,10 +35,25 @@
   }
 
   &__title {
-    margin-left: 12px;
     padding: 0 6px;
-    font-size: 2em;
-    animation: shine 2s forwards, flicker 3s infinite;
+    margin: 0;
+    margin-left: 12px;
+    font-size: 2.2em;
+
+    span {
+      transform: scale(0.9);
+      display: inline-block;
+    }
+
+    span:first-child {
+      animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+        infinite alternate;
+    }
+
+    span:last-child {
+      animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+        infinite alternate;
+    }
   }
 
   &__sns {
@@ -65,150 +86,22 @@
   animation-direction: alternate;
 }
 
-@keyframes shine {
+@keyframes bop {
   0% {
-    color: #183c6b;
-    text-shadow: none;
+    transform: scale(0.9);
   }
+  50%,
   100% {
-    color: #ffffff;
-    text-shadow: 0 0 0.6rem #e6f0ff, 0 0 1.5rem #4075d8,
-      -0.2rem 0.1rem 1rem #4070d8, 0.2rem 0.1rem 1rem #4068d8,
-      0 -0.5rem 2rem #247cff, 0.14rem 0.35rem 0 #2469ff;
+    transform: scale(1);
   }
 }
 
-@keyframes flicker {
-  from {
-    opacity: 1;
-  }
-
-  4% {
-    opacity: 0.9;
-  }
-
-  6% {
-    opacity: 0.85;
-  }
-
-  8% {
-    opacity: 0.95;
-  }
-
-  10% {
-    opacity: 0.9;
-  }
-
-  11% {
-    opacity: 0.922;
-  }
-
-  12% {
-    opacity: 0.9;
-  }
-
-  14% {
-    opacity: 0.95;
-  }
-
-  16% {
-    opacity: 0.98;
-  }
-
-  17% {
-    opacity: 0.9;
-  }
-
-  19% {
-    opacity: 0.93;
-  }
-
-  20% {
-    opacity: 0.99;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  26% {
-    opacity: 0.94;
-  }
-
-  28% {
-    opacity: 0.98;
-  }
-
-  37% {
-    opacity: 0.93;
-  }
-
-  38% {
-    opacity: 0.5;
-  }
-
-  39% {
-    opacity: 0.96;
-  }
-
-  42% {
-    opacity: 1;
-  }
-
-  44% {
-    opacity: 0.97;
-  }
-
-  46% {
-    opacity: 0.94;
-  }
-
-  56% {
-    opacity: 0.9;
-  }
-
-  58% {
-    opacity: 0.9;
-  }
-
-  60% {
-    opacity: 0.99;
-  }
-
-  68% {
-    opacity: 1;
-  }
-
-  70% {
-    opacity: 0.9;
-  }
-
-  72% {
-    opacity: 0.95;
-  }
-
-  93% {
-    opacity: 0.93;
-  }
-
-  95% {
-    opacity: 0.95;
-  }
-
-  97% {
-    opacity: 0.93;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes bounce {
+@keyframes bopB {
   0% {
-    transform: translateY(-16px);
+    transform: scale(0.9);
   }
+  80%,
   100% {
-    transform: translateY(16px);
+    transform: scale(1) rotateZ(-3deg);
   }
 }
