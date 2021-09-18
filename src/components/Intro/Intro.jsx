@@ -54,7 +54,12 @@ function Intro() {
           <span>Tran</span>
         </span>
         , <br />
-        <p className="text-center" data-aos="fade-up" data-aos-delay="1500">
+        <p
+          className="text-center"
+          data-aos="fade-up"
+          data-aos-delay="1500"
+          data-aos-offset="0"
+        >
           a front-end developer.{' />'}
         </p>
         <div className="intro__sns text-center">
