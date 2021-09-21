@@ -97,8 +97,14 @@ textarea {
   border-image-source: url('./assets/images/border.svg');
   border-style: solid;
   border-width: 4px;
+  transition: all 0.3s ease;
+
   // background: #fefefe;
   // box-shadow: 3px 3px 8px 1px #000000;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
 
   &.dark {
     border-image-source: url('./assets/images/border-white.svg');

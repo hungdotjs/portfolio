@@ -105,3 +105,12 @@
     transform: scale(1) rotateZ(-3deg);
   }
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-16px);
+  }
+  100% {
+    transform: translateY(16px);
+  }
+}
