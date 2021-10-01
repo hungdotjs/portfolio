@@ -8,7 +8,7 @@ const data = [
     title: 'Togebetter',
     image:
       'https://res.cloudinary.com/hungtn/image/upload/v1631730031/portfolio/app_togebetter_mvf3bk.webp',
-    description: 'A web app for language learning.',
+    description: 'Q&A web app for language learning.',
     technologies: 'Vue, Firebase, ElementUI',
     live: 'https://togebetter.netlify.app',
     repo: 'https://github.com/hungteddy/togebetter',
