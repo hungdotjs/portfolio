@@ -17,7 +17,7 @@ const snsData = [
   },
   {
     id: 'linkedin',
-    link: 'https://www.linkedin.com/in/hung-tran-2280b01b8/',
+    link: 'https://www.linkedin.com/in/hungtn98/',
     src: inIcon,
   },
   { id: 'github', link: 'https://github.com/hungteddy', src: githubIcon },
